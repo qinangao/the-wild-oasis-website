@@ -5,6 +5,11 @@ import Spinner from "../_components/Spinner";
 export const metadata = {
   title: "Cabins",
 };
+export const revalidate = 3600; //route level revalidation: data change time to time nu tnot consistantly
+// export const revalidate = 15;
+
+//Incremental static regeneration will regenerate a static page and fetch fresh data for it from time to time
+
 export default function Page() {
   return (
     <div>

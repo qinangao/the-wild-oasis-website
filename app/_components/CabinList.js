@@ -1,7 +1,9 @@
+// import { unstable_noStore as noStore } from "next/cache";
 import { getCabins } from "../_lib/data-service";
 import CabinCard from "./CabinCard";
 
 async function CabinList() {
+  // noStore(); // component level revalidation/individual fetch level
   const cabins = await getCabins();
   if (!cabins.length) return null;
   return (
