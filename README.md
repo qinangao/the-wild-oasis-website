@@ -31,15 +31,15 @@ The Wild Oasis blends nature’s beauty with comfortable living. Our family-run 
 
 1. **Clone the repository:**
 
-- git clone https://github.com/qinangao/the-wild-oasis-website.git
+git clone https://github.com/qinangao/the-wild-oasis-website.git
 
 2. **Install dependencies:**
 
-- npm install
+npm install
 
 3. **Run the development server:**
 
-- npm run dev
+npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
