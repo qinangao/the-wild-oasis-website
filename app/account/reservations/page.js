@@ -9,6 +9,7 @@ export const metadata = {
 
 export default async function Page() {
   const session = await auth();
+  if (!session) throw new Error("Please log in to view your reservations");
   const bookings = await getBookings(session.user.guestId);
 
   return (
